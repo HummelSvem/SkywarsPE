@@ -1,6 +1,6 @@
 name: SkyWarsForPE
 main: larryTheCoder\SkyWarsPE
-version: "4.0.2
+version: "4.0.2"
 api: [3.0.0-ALPHA12]
 author: larrythecoder (Author) | HummelSvem
 commands:
