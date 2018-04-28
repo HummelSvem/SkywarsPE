@@ -1,0 +1,136 @@
+#############################################
+## Arena utils:
+## TO-DO: add glass blocks like status block behind the
+## signs to make it beautiful like PikaNetwork
+#############################################
+---
+# if enabled is false arena wont load
+enabled: "true"
+# game lobby location
+signs:
+    join_sign_x: 89
+    join_sign_y: 78
+    join_sign_z: -487
+    join_sign_world: "world"
+    #enable status sign
+    enable_status: "true"
+    #status lines
+    #variables:
+    #   &a &b &c = you can use color with "&"
+    #   %alive = amount of in-game players
+    #   %dead = amount of dead players
+    #   %status = game status
+    #   %world = world name of arena
+    #   %max = max players per arena
+    status_line_1: "&3[SkyWars]"
+    status_line_2: "&a%alive/%max"
+    status_line_3: "%status"
+    status_line_4: "&6%world"
+    #sign update every X seconds
+    sign_update_time: 2
+    #returns player to main level/lobby
+    #world is same like arena_world
+    return_sign_x: 566
+    return_sign_y: 57
+    return_sign_z: 890
+chest:
+    # refill the chests
+    # true or false
+    refill: "true"
+    # chest refill time
+    refill_rate: "240"
+    # Chest
+arena:
+    # The weather in arena
+    # available weather: clear, rain , thunder, rain_thunder.
+    weather: "clear"
+    # Is arena is for VIP
+    # arena_vip: "false"
+    # game world location
+    arena_world: "SkyWarsForPE"
+    # Spectator spawn
+    spec_spawn_x: 320
+    spec_spawn_y: 50
+    spec_spawn_z: 32
+    # Grace timer
+    # Avoid player be killed when
+    # falling off the spawn [Glass]
+    grace_time: 5
+    # if spectator_mode is true 
+    # player to be spectator if they
+    # die true/false
+    spectator_mode: "true"
+    # enable time cycle - true / day / night / [ticks] 
+    time: "day"
+    # Item reward for win put ID:DAMAGE:COUNT ->  17:5:1,17:4:9,4:0:1  
+    # 0 if you don´t want reward
+    item_reward: 0
+    #coin rewars put number of money
+    money_reward: 0
+    # Finish message level / world
+    # ex: world,SkyWars,{{YOUR_MAIN_WORLD}}
+    # You can use " , " 
+    finish_msg_levels: world,SkyWars,lobby
+    # Start when the arena is full
+    # for me i will do "true"
+    start_when_full: "true"
+    #max players in arena
+    max_players: 12
+    #max VIP(src) in arena
+    #max_players_VIP: 12
+    #min player in arena
+    min_players: 1
+    #Max game time
+    max_game_time: 390
+    #starting time (seconds)
+    starting_time: 60
+    #spawn positions in arena
+    spawn_positions:
+        spawn1:
+          - 127
+          - 56
+          - 128
+        spawn2:
+          - 130
+          - 56
+          - 129
+        spawn3:
+          - 129
+          - 56
+          - 126
+        spawn4:
+          - 128
+          - 57
+          - 125
+        spawn5:
+          - 128
+          - 57
+          - 125
+        spawn6:
+          - 122
+          - 57
+          - 126
+        spawn7:
+          - 122
+          - 57
+          - 126
+        spawn8:
+          - 122
+          - 57
+          - 126
+        spawn9:
+          - 127
+          - 56
+          - 126
+        spawn10:
+          - 119
+          - 56
+          - 131
+        spawn11:
+          - 131
+          - 57
+          - 126
+        spawn12:
+          - 129
+          - 57
+          - 125
